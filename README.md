@@ -47,7 +47,8 @@ Abrir el fichero como un proyecto de Java.
 - Ejecutar desde el IDE
     - Abrir el archivo principal (el que contiene el método main).
 
-    - Hacer clic derecho y seleccionar "Run 'Main'".
+    - Hacer clic derecho y seleccionar "Run 'Main".
+    - Para probar los dfistintos bloques de código, deberás quitar los comentarios dentro de main "/**/"
 
 
 ## 🌐Desplegament

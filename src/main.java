@@ -14,7 +14,7 @@ public class main {
 
         selling2.addProduct(new Product("Pan", 1.2));
         selling2.addProduct(new Product("huevos", 2.4));
-
+/*
         try{
             selling2.totalSellingscount();
         } catch (EmptySellException e) {
@@ -26,7 +26,7 @@ public class main {
         } catch (IndexOutOfBoundsException e) {
             throw new RuntimeException(e);
         }
-
+*/
 
     }
 }
