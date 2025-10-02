@@ -1,57 +1,56 @@
 <br>
 
-## 📄Descripció - Enunciat de l'exercici
+## 📄Description - Exercise Statement
 
-### Exercici 1
+### Exercise 1
 
-Crea una classe anomenada "Producte" amb els atributs nom i preu, i una altra classe anomenada "Venda". Aquesta classe té com a atributs una col·lecció de productes i el preu total de la venda.
+Create a class named "Producte" (Product) with the attributes `nom` (name) and `preu` (price), and another class named "Venda" (Sale). This class has as its attributes a collection of products and the total price of the sale.
 
-La classe "Venda", té un mètode anomenat calcularTotal() que llança l’excepció personalitzada "VendaBuidaException" i mostra per pantalla “Per fer una venda primer has d’afegir productes” si la col·lecció de productes està buida. Si la col·lecció té productes, llavors ha de recórrer la col·lecció i guardar la suma de tots els preus dels productes a l’atribut preu total de la venda.
+The "Venda" class has a method called `calcularTotal()` that throws the custom exception "VendaBuidaException" (EmptySaleException) and displays on the screen “Per fer una venda primer has d’afegir productes” (To make a sale, you must first add products) if the product collection is empty. If the collection has products, then it must iterate through the collection and store the sum of all the product prices in the `preu total` (total price) attribute of the sale.
 
-L’excepció personalitzada "VendaBuidaException" ha de ser filla de la classe Exception. Al seu constructor li hem de passar el missatge  “Per fer una venda primer has d’afegir productes” i quan capturem l’excepció, l’hem de mostrar per pantalla amb el mètode getMessage() de l’excepció.
+The custom exception "VendaBuidaException" must be a child of the `Exception` class. In its constructor, we must pass the message “Per fer una venda primer has d’afegir productes”, and when we catch the exception, we must display it on the screen using the exception's `getMessage()` method.
 
-Escriu el codi necessari per a generar i capturar una excepció de tipus "IndexOutOfBoundsException".
+Write the necessary code to generate and catch an `IndexOutOfBoundsException`.
 
-## 💻Tecnologies Utilitzades
+## 💻Technologies Used
 
 **Java**: 24 (OpenJDK)
 
-## 📋Requisits
+## 📋Requirements
 
-- Sistema Operativo: Windows/macOS/Linux.
+- Operating System: Windows/macOS/Linux.
 
-- **Java Development Kit (JDK):** Versió 24.0.1 (o superior). Es recomana utilitzar una distribució d'**OpenJDK**.
+- **Java Development Kit (JDK):** Version 24.0.1 (or higher). It is recommended to use an **OpenJDK** distribution.
 
-- Ejemplo: JDK 21 o superior.
+- Example: JDK 21 or higher.
 
-- Entorno de Desarrollo Integrado (IDE): IntelliJ IDEA.
+- Integrated Development Environment (IDE): IntelliJ IDEA.
 
+## 🛠️Installation
 
-## 🛠️Instal·lació
+- Clone the Repository:
 
-- Clonar el Repositorio:
-
+```
 git clone https://github.com/Rafadicandia/Tasca-S1.02.-Exceptions-Nivell1.git
+```
 
-- Configuración del IDE:
+- IDE Configuration:
 
-Abrir el fichero como un proyecto de Java.
+Open the file as a Java project.
 
+## ▶️Execution
 
-## ▶️Execució
+- Execute from the IDE
+  - Open the main file (the one that contains the `main` method).
 
-- Ejecutar desde el IDE
-    - Abrir el archivo principal (el que contiene el método main).
+  - Right-click and select "Run 'Main'".
 
-    - Hacer clic derecho y seleccionar "Run 'Main".
-    - Para probar los dfistintos bloques de código, deberás quitar los comentarios dentro de main "/**/"
+  - To test the different code blocks, you must remove the comments "/\*\*/" inside `main`.
 
+## 🌐Deployment
 
-## 🌐Desplegament
+Instructions for deploying the project in a production environment or on a server.
 
-Instruccions per al desplegament del projecte en un entorn de producció o servidor.
+## 🤝Contributions
 
-
-## 🤝Contribucions
-
-### Las contribuciones son bienvenidas. Por favor, reporta cualquier error abriendo un issue o sugiere mejoras mediante un Pull Request claro y conciso.
+### Contributions are welcome. Please report any errors by opening an issue or suggest improvements through a clear and concise Pull Request.
