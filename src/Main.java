@@ -41,10 +41,10 @@ public class Main {
         saleForTestOutOfBound.addProduct(new Product("Cookies", 2.4));
 
         try {
-            saleForTestOutOfBound.getProducts();
+            saleForTestOutOfBound.getProducts().get(3);
         } catch (IndexOutOfBoundsException e) {
-            throw new RuntimeException(e);
-            
+            System.out.println("Error: " + e.getMessage());
+
             
         }
 
