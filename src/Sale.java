@@ -4,11 +4,11 @@ import java.util.List;
 
 public class Sale {
    private  List<Product> products;
-    private double totalSellings;
+    private double totalPrice;
 
     public Sale() {
         this.products = new ArrayList<>();
-        this.totalSellings = 0.0;
+        this.totalPrice = 0.0;
     }
 
     public void addProduct(Product p) {
@@ -19,12 +19,12 @@ public class Sale {
         if (this.products.isEmpty()) {
             throw new EmptySaleException("To make a sale, first you have to add products.");
         }
-        this.totalSellings = 0;
-
+        double currentTotal = 0;
         for (Product p : this.products) {
-            totalSellings += p.price;
+            currentTotal += p.getPrice();
         }
-        return totalSellings;
+        this.totalPrice = currentTotal;
+        return this.totalPrice;
 
     }
 
