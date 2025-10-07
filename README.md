@@ -4,11 +4,18 @@
 
 ### Exercise 1
 
-Create a class named "Producte" (Product) with the attributes `nom` (name) and `preu` (price), and another class named "Venda" (Sale). This class has as its attributes a collection of products and the total price of the sale.
+Create a class named "Producte" (Product) with the attributes `nom` (name) and `preu` (price), and another class named "
+Venda" (Sale). This class has as its attributes a collection of products and the total price of the sale.
 
-The "Venda" class has a method called `calcularTotal()` that throws the custom exception "VendaBuidaException" (EmptySaleException) and displays on the screen “Per fer una venda primer has d’afegir productes” (To make a sale, you must first add products) if the product collection is empty. If the collection has products, then it must iterate through the collection and store the sum of all the product prices in the `preu total` (total price) attribute of the sale.
+The "Venda" class has a method called `calcularTotal()` that throws the custom exception "VendaBuidaException" (
+EmptySaleException) and displays on the screen “Per fer una venda primer has d’afegir productes” (To make a sale, you
+must first add products) if the product collection is empty. If the collection has products, then it must iterate
+through the collection and store the sum of all the product prices in the `preu total` (total price) attribute of the
+sale.
 
-The custom exception "VendaBuidaException" must be a child of the `Exception` class. In its constructor, we must pass the message “Per fer una venda primer has d’afegir productes”, and when we catch the exception, we must display it on the screen using the exception's `getMessage()` method.
+The custom exception "VendaBuidaException" must be a child of the `Exception` class. In its constructor, we must pass
+the message “Per fer una venda primer has d’afegir productes”, and when we catch the exception, we must display it on
+the screen using the exception's `getMessage()` method.
 
 Write the necessary code to generate and catch an `IndexOutOfBoundsException`.
 
@@ -41,11 +48,11 @@ Open the file as a Java project.
 ## ▶️Execution
 
 - Execute from the IDE
-  - Open the main file (the one that contains the `main` method).
+    - Open the main file (the one that contains the `main` method).
 
-  - Right-click and select "Run 'Main'".
+    - Right-click and select "Run 'Main'".
 
-  - To test the different code blocks, you must remove the comments "/\*\*/" inside `main`.
+    - To test the different code blocks, you must remove the comments "/\*\*/" inside `main`.
 
 ## 🌐Deployment
 

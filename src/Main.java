@@ -8,9 +8,9 @@ public class Main {
     }
 
     private static void demo1() {
-        Sell selling1= new Sell();
+        Sell selling1 = new Sell();
         System.out.println("--Test for empty selling list--");
-        try{
+        try {
             selling1.totalSellingscount();
         } catch (EmptySellException e) {
             throw new RuntimeException(e);
@@ -24,7 +24,7 @@ public class Main {
         selling2.addProduct(new Product("Pan", 1.2));
         selling2.addProduct(new Product("huevos", 2.4));
 
-        try{
+        try {
             selling2.totalSellingscount();
         } catch (EmptySellException e) {
             throw new RuntimeException(e);
@@ -39,7 +39,7 @@ public class Main {
         selling2.addProduct(new Product("Pan", 1.2));
         selling2.addProduct(new Product("huevos", 2.4));
 
-        try{
+        try {
             selling2.get(3);
         } catch (IndexOutOfBoundsException e) {
             throw new RuntimeException(e);
