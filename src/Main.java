@@ -8,24 +8,24 @@ public class Main {
     }
 
     private static void demo1() {
-        Sale selling1 = new Sale();
+        Sale saleNoProducts = new Sale();
         System.out.println("--Test for empty selling list--");
         try {
-            selling1.calculateTotal();
+            saleNoProducts.calculateTotal();
         } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
         }
     }
 
     private static void demo2() {
-        Sale selling2 = new Sale();
+        Sale saleTwoProducts = new Sale();
         System.out.println("--Test for no error on two element list--");
 
-        selling2.addProduct(new Product("Bread", 1.2));
-        selling2.addProduct(new Product("Eggs", 2.4));
+        saleTwoProducts.addProduct(new Product("Bread", 1.2));
+        saleTwoProducts.addProduct(new Product("Eggs", 2.4));
 
         try {
-            double total = selling2.calculateTotal();
+            double total = saleTwoProducts.calculateTotal();
             System.out.println("Total Sales: " + total + "€");
         } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
@@ -34,14 +34,14 @@ public class Main {
     }
 
     private static void demo3() {
-        Sale selling3 = new Sale();
+        Sale saleForTestOutOfBound = new Sale();
         System.out.println("--Test for error whe searching for an out of index element--");
 
-        selling3.addProduct(new Product("Milk", 1.2));
-        selling3.addProduct(new Product("Cookies", 2.4));
+        saleForTestOutOfBound.addProduct(new Product("Milk", 1.2));
+        saleForTestOutOfBound.addProduct(new Product("Cookies", 2.4));
 
         try {
-            selling3.get(3);
+            saleForTestOutOfBound.get(3);
         } catch (IndexOutOfBoundsException e) {
             throw new RuntimeException(e);
             
