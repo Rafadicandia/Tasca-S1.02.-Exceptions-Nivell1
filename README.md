@@ -29,8 +29,6 @@ Write the necessary code to generate and catch an `IndexOutOfBoundsException`.
 
 - **Java Development Kit (JDK):** Version 24.0.1 (or higher). It is recommended to use an **OpenJDK** distribution.
 
-- Example: JDK 21 or higher.
-
 - Integrated Development Environment (IDE): IntelliJ IDEA.
 
 ## 🛠️Installation
@@ -53,10 +51,6 @@ Open the file as a Java project.
     - Right-click and select "Run 'Main'".
 
     - To test the different code blocks, you must remove the comments "/\*\*/" inside `main`.
-
-## 🌐Deployment
-
-Instructions for deploying the project in a production environment or on a server.
 
 ## 🤝Contributions
 
