@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
+
 
 
 public class Sale {
@@ -28,7 +30,9 @@ public class Sale {
 
     }
 
-    public Product get(int i) {
-        return products.get(i);
+    public List<Product> getProducts() {
+        return Collections.unmodifiableList(this.products);
+
+
     }
 }
