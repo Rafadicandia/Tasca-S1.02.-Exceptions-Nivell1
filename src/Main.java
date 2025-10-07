@@ -25,7 +25,8 @@ public class Main {
         selling2.addProduct(new Product("Eggs", 2.4));
 
         try {
-            selling2.calculateTotal();
+            double total = selling2.calculateTotal();
+            System.out.println("Total Sales: " + total + "€");
         } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
         }
@@ -33,16 +34,17 @@ public class Main {
     }
 
     private static void demo3() {
-        Sale selling2 = new Sale();
+        Sale selling3 = new Sale();
         System.out.println("--Test for error whe searching for an out of index element--");
 
-        selling2.addProduct(new Product("Pan", 1.2));
-        selling2.addProduct(new Product("huevos", 2.4));
+        selling3.addProduct(new Product("Milk", 1.2));
+        selling3.addProduct(new Product("Cookies", 2.4));
 
         try {
-            selling2.get(3);
+            selling3.get(3);
         } catch (IndexOutOfBoundsException e) {
             throw new RuntimeException(e);
+            
         }
 
 
