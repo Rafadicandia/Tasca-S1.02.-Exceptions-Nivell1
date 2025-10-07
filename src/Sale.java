@@ -15,9 +15,9 @@ public class Sale {
         this.products.add(p);
     }
 
-    public double totalSellingsCount() throws EmptySellException {
+    public double totalSellingsCount() throws EmptySaleException {
         if (this.products.isEmpty()) {
-            throw new EmptySellException("To make a sale, first you have to add products.");
+            throw new EmptySaleException("To make a sale, first you have to add products.");
         }
         this.totalSellings = 0;
 

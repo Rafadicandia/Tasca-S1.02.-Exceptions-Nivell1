@@ -12,7 +12,7 @@ public class Main {
         System.out.println("--Test for empty selling list--");
         try {
             selling1.totalSellingsCount();
-        } catch (EmptySellException e) {
+        } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
         }
     }
@@ -26,7 +26,7 @@ public class Main {
 
         try {
             selling2.totalSellingsCount();
-        } catch (EmptySellException e) {
+        } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
         }
 
