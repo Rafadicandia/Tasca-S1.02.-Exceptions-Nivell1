@@ -35,15 +35,16 @@ public class Main {
 
     private static void demo3() {
         Sale saleForTestOutOfBound = new Sale();
-        System.out.println("--Test for error whe searching for an out of index element--");
+        System.out.println("--Test for error when searching for an out of index element--");
 
         saleForTestOutOfBound.addProduct(new Product("Milk", 1.2));
         saleForTestOutOfBound.addProduct(new Product("Cookies", 2.4));
 
         try {
-            saleForTestOutOfBound.getProducts(3);
+            saleForTestOutOfBound.getProducts();
         } catch (IndexOutOfBoundsException e) {
             throw new RuntimeException(e);
+            
             
         }
 
