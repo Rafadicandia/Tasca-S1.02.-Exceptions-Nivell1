@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Sell {
+public class Sale {
     List<Product> products;
     double totalSellings;
 
-    public Sell() {
+    public Sale() {
         this.products = new ArrayList<>();
         this.totalSellings = 0.0;
     }
@@ -15,16 +15,15 @@ public class Sell {
         this.products.add(p);
     }
 
-    public double totalSellingscount() throws EmptySellException {
+    public double totalSellingsCount() throws EmptySellException {
         if (this.products.isEmpty()) {
-            throw new EmptySellException("Per fer una venda primer has d’afegir productes");
+            throw new EmptySellException("To make a sale, first you have to add products.");
         }
         this.totalSellings = 0;
 
         for (Product p : this.products) {
             totalSellings += p.price;
         }
-        System.out.println("Ventas totales: " + this.totalSellings + "€");
         return totalSellings;
 
     }

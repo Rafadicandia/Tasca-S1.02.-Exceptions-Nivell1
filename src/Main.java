@@ -2,38 +2,38 @@ public class Main {
 
     public static void main(String[] args) {
         demo1();
-//       demo2();
-//       demo3();
+        demo2();
+        demo3();
 
     }
 
     private static void demo1() {
-        Sell selling1 = new Sell();
+        Sale selling1 = new Sale();
         System.out.println("--Test for empty selling list--");
         try {
-            selling1.totalSellingscount();
+            selling1.totalSellingsCount();
         } catch (EmptySellException e) {
             System.out.println(e.getMessage());
         }
     }
 
     private static void demo2() {
-        Sell selling2 = new Sell();
+        Sale selling2 = new Sale();
         System.out.println("--Test for no error on two element list--");
 
-        selling2.addProduct(new Product("Pan", 1.2));
-        selling2.addProduct(new Product("huevos", 2.4));
+        selling2.addProduct(new Product("Bread", 1.2));
+        selling2.addProduct(new Product("Eggs", 2.4));
 
         try {
-            selling2.totalSellingscount();
+            selling2.totalSellingsCount();
         } catch (EmptySellException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
 
     }
 
     private static void demo3() {
-        Sell selling2 = new Sell();
+        Sale selling2 = new Sale();
         System.out.println("--Test for error whe searching for an out of index element--");
 
         selling2.addProduct(new Product("Pan", 1.2));
