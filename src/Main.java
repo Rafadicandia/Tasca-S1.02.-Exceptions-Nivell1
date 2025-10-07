@@ -11,7 +11,7 @@ public class Main {
         Sale selling1 = new Sale();
         System.out.println("--Test for empty selling list--");
         try {
-            selling1.totalSellingsCount();
+            selling1.calculateTotal();
         } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
         }
@@ -25,7 +25,7 @@ public class Main {
         selling2.addProduct(new Product("Eggs", 2.4));
 
         try {
-            selling2.totalSellingsCount();
+            selling2.calculateTotal();
         } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
         }

@@ -3,8 +3,8 @@ import java.util.List;
 
 
 public class Sale {
-    List<Product> products;
-    double totalSellings;
+   private  List<Product> products;
+    private double totalSellings;
 
     public Sale() {
         this.products = new ArrayList<>();
@@ -15,7 +15,7 @@ public class Sale {
         this.products.add(p);
     }
 
-    public double totalSellingsCount() throws EmptySaleException {
+    public double calculateTotal() throws EmptySaleException {
         if (this.products.isEmpty()) {
             throw new EmptySaleException("To make a sale, first you have to add products.");
         }
