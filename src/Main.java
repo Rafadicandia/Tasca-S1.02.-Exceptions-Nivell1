@@ -13,7 +13,7 @@ public class Main {
         try {
             selling1.totalSellingscount();
         } catch (EmptySellException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
     }
 
